@@ -1,4 +1,3 @@
-# Author: Shriyansh
 import re
 
 from nltk.stem import PorterStemmer
