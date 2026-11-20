@@ -1,4 +1,3 @@
-# Author: Shriyansh
 import os
 import sys
 
