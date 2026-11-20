@@ -1,4 +1,3 @@
-# Author: Shriyansh
 import json
 import random
 import re
