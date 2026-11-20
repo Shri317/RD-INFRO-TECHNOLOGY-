@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Support</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 14v-2a9 9 0 0 1 18 0v2"/>
+          <path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z"/>
+          <path d="M3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"/>
+          <path d="M18 17v1a3 3 0 0 1-3 3h-2"/>
+        </svg>
+        <span>Customer Support</span>
+      </div>
+      <div class="nav-links">
+        <a href="#topics">Help topics</a>
+        <a href="#chat">Chat</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <section class="left">
+      <h1>How can we help you today?</h1>
+      <p class="lead">Ask the chat anything about your orders, payments or account, or pick a topic below to get started.</p>
+
+      <div class="topics" id="topics">
+        <button class="topic" data-q="Where is my order?">
+          <span class="icon blue">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>
+          </span>
+          <b>Track order</b>
+          <small>See where your package is</small>
+        </button>
+        <button class="topic" data-q="I want a refund">
+          <span class="icon green">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          </span>
+          <b>Refunds</b>
+          <small>Request or check a refund</small>
+        </button>
+        <button class="topic" data-q="How long does shipping take?">
+          <span class="icon orange">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="10" rx="1"/><path d="M15 9h4l3 3v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          </span>
+          <b>Shipping</b>
+          <small>Delivery time and charges</small>
+        </button>
+        <button class="topic" data-q="What payment methods do you accept?">
+          <span class="icon purple">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </span>
+          <b>Payments</b>
+          <small>Cards, UPI and COD</small>
+        </button>
+        <button class="topic" data-q="I forgot my password">
+          <span class="icon red">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </span>
+          <b>Account help</b>
+          <small>Login and password</small>
+        </button>
+        <button class="topic" data-q="My app is not working">
+          <span class="icon teal">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg>
+          </span>
+          <b>Technical issue</b>
+          <small>Something is not working</small>
+        </button>
+      </div>
+
+      <div class="info">
+        <div>
+          <b>Support hours</b>
+          <span>Monday to Saturday, 9 AM to 7 PM</span>
+        </div>
+        <div>
+          <b>Chat</b>
+          <span>Available 24 hours a day</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat" id="chat">
+      <header class="chat-head">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z"/><path d="M3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"/></svg>
+        </div>
+        <div class="who">
+          <b>Support Team</b>
+          <span><i class="dot"></i> Online</span>
+        </div>
+        <button id="clear" type="button" title="Start a new chat">New chat</button>
+      </header>
+
+      <div class="messages" id="messages"></div>
+
+      <div class="quick" id="quick">
+        <button type="button" data-q="Where is my order?">Track my order</button>
+        <button type="button" data-q="I want a refund">Refund</button>
+        <button type="button" data-q="Cancel my order">Cancel order</button>
+        <button type="button" data-q="I want to talk to a human">Talk to a person</button>
+      </div>
+
+      <form id="form" autocomplete="off">
+        <input type="text" id="text" maxlength="500" placeholder="Type your message..." aria-label="Message">
+        <button type="submit" aria-label="Send">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey there",
+        "good morning",
+        "good evening",
+        "hey",
+        "hello support",
+        "is anyone there",
+        "namaste",
+        "hi, I need some help",
+        "hey buddy",
+        "hi bot",
+        "good afternoon",
+        "hello, anyone here",
+        "yo",
+        "greetings",
+        "hi, how are you",
+        "hey, can you help me",
+        "hello team",
+        "hiya"
+      ],
+      "responses": [
+        "Hello! I'm the support bot. How can I help you today?",
+        "Hi there! Welcome to customer support. What can I do for you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "talk to you soon",
+        "that's all",
+        "i am done",
+        "nothing else",
+        "thanks bye",
+        "have a nice day",
+        "see you",
+        "bye bye",
+        "ok bye",
+        "talk later",
+        "i'm leaving now",
+        "good night",
+        "that will be all",
+        "catch you later",
+        "ok that is everything",
+        "farewell"
+      ],
+      "responses": [
+        "Goodbye! Have a great day. Reach out any time you need help.",
+        "Thanks for chatting with us. See you soon!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "that was helpful",
+        "great, thank you",
+        "appreciate it",
+        "awesome thanks",
+        "perfect, thanks",
+        "thanks for the help",
+        "thank you so much",
+        "many thanks",
+        "cheers",
+        "thank you very much",
+        "thx",
+        "you were very helpful",
+        "that solved it, thanks",
+        "great help, thank you",
+        "much appreciated"
+      ],
+      "responses": [
+        "You're welcome! Is there anything else I can help with?",
+        "Happy to help! Let me know if you have more questions."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "where is my order",
+        "track my order",
+        "order status",
+        "has my order shipped",
+        "when will my order arrive",
+        "i want to know my order status",
+        "track package",
+        "what is the status of order",
+        "my parcel hasn't arrived",
+        "check delivery status",
+        "order tracking",
+        "where's my package",
+        "is my order on the way",
+        "order not delivered yet",
+        "tell me my delivery status",
+        "status of my purchase",
+        "i placed an order, where is it",
+        "track order ORD12345",
+        "how far is my shipment",
+        "my order is late",
+        "update on my order"
+      ],
+      "responses": [
+        "I can help you track your order. Please share your order ID (for example, ORD12345) and I'll check the status."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "i want a refund",
+        "how do i get my money back",
+        "refund policy",
+        "refund status",
+        "i was charged twice",
+        "money not refunded",
+        "request a refund",
+        "when will i get my refund",
+        "refund my payment",
+        "return and refund",
+        "i need my money back",
+        "refund not received",
+        "how long does a refund take",
+        "return my money",
+        "i want to return and get a refund",
+        "refund for order",
+        "charged but did not get product",
+        "get reimbursement",
+        "my refund is pending",
+        "issue a refund"
+      ],
+      "responses": [
+        "I'm sorry for the trouble. Refunds are processed within 5–7 business days to the original payment method once approved. Please share your order ID and I'll raise a refund request for you."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "cancel my order",
+        "i want to cancel",
+        "how to cancel an order",
+        "please cancel order",
+        "i changed my mind, cancel",
+        "stop my order",
+        "cancellation request",
+        "can i cancel my purchase",
+        "cancel order please",
+        "i don't want the order anymore",
+        "can you cancel this order",
+        "abort my order",
+        "cancel my purchase",
+        "how do i cancel what i ordered",
+        "withdraw my order",
+        "call off my order"
+      ],
+      "responses": [
+        "You can cancel an order before it has shipped. Share your order ID and I'll start the cancellation. If it has already shipped, I'll guide you through a return instead."
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": [
+        "how long does shipping take",
+        "delivery time",
+        "shipping charges",
+        "do you ship internationally",
+        "how much is delivery",
+        "what are the shipping options",
+        "express delivery available",
+        "when will it be delivered",
+        "shipping cost",
+        "how many days for delivery",
+        "what are the delivery charges",
+        "is shipping free",
+        "do you deliver to my city",
+        "international shipping available",
+        "how fast is delivery",
+        "tell me about shipping policy",
+        "delivery options",
+        "what is the shipping fee"
+      ],
+      "responses": [
+        "Standard shipping takes 3–5 business days and express takes 1–2 days. Shipping is free on orders above ₹999. We deliver across India and to select international locations."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "what payment methods do you accept",
+        "can i pay with upi",
+        "do you accept credit cards",
+        "payment failed",
+        "cash on delivery available",
+        "my payment is not going through",
+        "how can i pay",
+        "net banking option",
+        "emi available",
+        "which payment options do you have",
+        "can i use debit card",
+        "is cash on delivery possible",
+        "payment declined",
+        "my card was charged but order failed",
+        "do you support google pay",
+        "pay using upi",
+        "can i pay in installments",
+        "payment gateway error"
+      ],
+      "responses": [
+        "We accept UPI, credit/debit cards, net banking, wallets and Cash on Delivery. If a payment failed, any deducted amount is automatically reversed within 3–5 business days."
+      ]
+    },
+    {
+      "tag": "account_issue",
+      "patterns": [
+        "i forgot my password",
+        "reset my password",
+        "cannot log in",
+        "unable to login",
+        "my account is locked",
+        "change my email",
+        "update my profile",
+        "how do i create an account",
+        "login problem",
+        "sign up help",
+        "forgot password",
+        "can't sign in",
+        "password reset link not working",
+        "i am locked out of my account",
+        "how to change my password",
+        "unable to access my account",
+        "register new account",
+        "update my phone number",
+        "delete my account",
+        "my login is not working"
+      ],
+      "responses": [
+        "For account help: use 'Forgot Password' on the login page to get a reset link by email. If your account is locked, I can escalate it to our team. What exactly are you seeing?"
+      ]
+    },
+    {
+      "tag": "product_info",
+      "patterns": [
+        "tell me about your products",
+        "what services do you offer",
+        "do you have this in stock",
+        "product warranty",
+        "what is the warranty period",
+        "i need product details",
+        "is this product available",
+        "product specifications",
+        "what do you sell",
+        "what products do you have",
+        "tell me more about the product",
+        "is there a warranty",
+        "product availability",
+        "do you provide software services",
+        "which services are available",
+        "what does your company do",
+        "is the item in stock",
+        "details about the product",
+        "what ai services do you provide"
+      ],
+      "responses": [
+        "We offer software solutions, AI services and tech products. All hardware carries a 1-year warranty. Tell me which product you're interested in and I'll share the details."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "my app is not working",
+        "the website is down",
+        "i am getting an error",
+        "software keeps crashing",
+        "something is broken",
+        "i need technical help",
+        "bug in the application",
+        "app is very slow",
+        "it won't load",
+        "need tech support",
+        "the app crashed",
+        "website not loading",
+        "getting a 500 error",
+        "page shows error",
+        "application is not responding",
+        "system is lagging",
+        "the site is very slow",
+        "error while uploading",
+        "features are not working",
+        "i found a bug"
+      ],
+      "responses": [
+        "Sorry you're facing issues. Try clearing the cache and restarting the app first. If it continues, describe the error message and I'll create a ticket for our technical team."
+      ]
+    },
+    {
+      "tag": "human_agent",
+      "patterns": [
+        "talk to a human",
+        "connect me to an agent",
+        "i want to speak to a person",
+        "customer care number",
+        "transfer me to support",
+        "human agent please",
+        "i need a real person",
+        "call me back",
+        "escalate my issue",
+        "i want to talk to someone",
+        "give me a customer care executive",
+        "connect me with support team",
+        "speak to a representative",
+        "can i get a phone call",
+        "live agent please",
+        "contact support person",
+        "i want a human",
+        "let me talk to an agent"
+      ],
+      "responses": [
+        "Of course. I can connect you with a human agent. Our team is available Mon–Sat, 9 AM – 7 PM IST at support@rdinfrotech.com. Would you like me to create a callback request?"
+      ]
+    },
+    {
+      "tag": "working_hours",
+      "patterns": [
+        "what are your working hours",
+        "when are you open",
+        "support timings",
+        "are you available on sunday",
+        "what time does support close",
+        "business hours",
+        "contact timings",
+        "what time do you open",
+        "are you open on weekends",
+        "when is customer support available",
+        "support hours please",
+        "do you work on holidays",
+        "till what time is support available",
+        "opening hours",
+        "when can i call you"
+      ],
+      "responses": [
+        "Our support team is available Monday to Saturday, 9 AM to 7 PM IST. This chatbot is available 24/7."
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "i am not happy with the service",
+        "this is unacceptable",
+        "i want to file a complaint",
+        "worst experience ever",
+        "i received a damaged product",
+        "wrong item delivered",
+        "very disappointed",
+        "bad service",
+        "i want to complain",
+        "the product is defective",
+        "you sent me the wrong product",
+        "terrible customer service",
+        "i am very upset",
+        "item arrived broken",
+        "this is a horrible experience",
+        "i am angry about my order",
+        "poor quality product",
+        "raise a complaint"
+      ],
+      "responses": [
+        "I'm really sorry about your experience. I've noted your complaint and would like to make this right. Please share your order ID and a short description so I can escalate it as high priority."
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": [
+        "who are you",
+        "are you a robot",
+        "are you human",
+        "what is your name",
+        "what can you do",
+        "how can you help me",
+        "are you an ai",
+        "tell me about yourself",
+        "what's your name",
+        "are you a real person",
+        "who am i talking to",
+        "are you a bot",
+        "what are you",
+        "what can you help me with",
+        "introduce yourself",
+        "what is your purpose",
+        "are you artificial intelligence",
+        "what do you do"
+      ],
+      "responses": [
+        "I'm a support chatbot built with NLP. I can track orders, explain refunds, shipping and payments, help with accounts and connect you to a human agent."
+      ]
+    }
+  ]
+}
