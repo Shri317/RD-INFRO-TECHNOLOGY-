@@ -1,7 +1,4 @@
-# Author: Shriyansh
-# Trains the intent classifier and saves it to model/
 import json
-
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
